@@ -15,7 +15,6 @@ class DiceSet
       rnum = Random.new
       @values << rnum.rand(1..6)
     end
-    puts "#{values}"
   end
 end
 

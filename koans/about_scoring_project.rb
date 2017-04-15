@@ -37,11 +37,8 @@ def score(dice)
   return total_score if dice.size == 0
 
   dice_old = dice
-  puts "#{dice}"
-  puts "#{dice_old}"
   dice = []
   dice_old.each {|x| dice.push(x) if x > 0 && x < 7 }
-  puts "#{dice}"
   dice.sort!
 
   dice.each do |x|
